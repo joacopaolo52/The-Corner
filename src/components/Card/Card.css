@@ -1,0 +1,28 @@
+.card {
+    width: 250px;
+    height: auto;
+    background-color: #eceff0;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid black;
+}
+.card h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    margin: 8px;
+}
+.card img {
+    width: 200px;
+    height: auto;
+    margin-top: 3px;
+}

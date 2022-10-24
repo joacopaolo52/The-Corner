@@ -1,0 +1,11 @@
+h2 {
+    color: black;
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    border-bottom: 3px dashed black;
+}

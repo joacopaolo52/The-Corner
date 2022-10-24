@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    justify-content: space-evenly;
+}
+
+
+.numero {
+    color: black;
+    font-size: 12px !important;
+}
+
+.ItemCount {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+}
+
+.ItemCount button {
+    width: 20px;
+    height: 20px;
+    margin:  auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.addToCart {
+    margin-bottom: 10px;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    width: 120px;
+    transition: all 1s;
+}
+
+.addToCart:hover {
+    background-color: white;
+    color: black;
+
+}
