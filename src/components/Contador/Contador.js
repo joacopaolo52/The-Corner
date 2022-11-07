@@ -3,7 +3,7 @@ import './Contador.css';
 
 function Contador(props) {
 
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState(1);
 
     function agregarAlContador() {
         if (contador < props.stock) {
@@ -15,7 +15,7 @@ function Contador(props) {
     }
 
     function restarAlContador() {
-        if (contador > 0) {
+        if (contador > 1) {
             setContador(contador - 1);
             console.log(contador -1);
         } else {
@@ -35,8 +35,6 @@ function Contador(props) {
                 <button onClick={agregarAlContador}>+</button>
 
             </div>
-
-            <button className='addToCart'>Add to cart</button>
         
         </div>
         </>

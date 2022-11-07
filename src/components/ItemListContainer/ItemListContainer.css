@@ -7,3 +7,10 @@
     margin: auto;
     margin-top: 40px;
 }
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}

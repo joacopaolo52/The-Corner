@@ -1,0 +1,61 @@
+.Details {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    width: 120px;
+    transition: all 1500ms;
+}
+
+.Details:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;   
+}
+
+.detailContent {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    z-index: 999;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    margin: auto;
+    overflow: hidden;
+    border: solid black 5px;
+}
+
+.detailContent h4 {
+    color: black;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.detailContent div {
+    width: 100%;
+    justify-content: center;
+}
+.detailContent h3 {
+    display: block;
+    font-size: 30px;
+    top: 10px;
+    bottom: 10px;
+}
+
+
+.detailContent p {
+    color: black;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: dashed black 2px;
+}
