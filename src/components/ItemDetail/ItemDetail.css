@@ -19,43 +19,45 @@
 }
 
 .detailContent {
-    position: fixed;
-    top: 25%;
-    left: 25%;
-    z-index: 999;
-    width: 50%;
-    height: 50%;
-    background-color: white;
+    display: flex;
     margin: auto;
-    overflow: hidden;
+    z-index: 99989;
+    width: 700px;
+    height: 400px;
+    background-color: white;
     border: solid black 5px;
+    overflow: hidden;
 }
 
 .detailContent h4 {
     color: black;
     display: block;
-    position: absolute;
-    top: 5px;
-    right: 25px;
+    margin-top: 5px;
+    margin-right: 25px;
     font-size: 30px;
     cursor: pointer;
 }
 .detailContent div {
     width: 100%;
-    justify-content: center;
 }
 .detailContent h3 {
-    display: block;
     font-size: 30px;
     top: 10px;
     bottom: 10px;
 }
 
+.detailContent img {
+    height: 400px;
+    top: 0;
+    display: inline-block;
+}
 
-.detailContent p {
+
+
+/* .detailContent p {
     color: black;
     width: 70%;
     height: 70%;
     margin: auto;
     border: dashed black 2px;
-}
+} */

@@ -1,4 +1,5 @@
 import Item from "../Item/Item";
+import { Link } from "react-router-dom";
 
 
  function ItemList(props) {
@@ -11,7 +12,13 @@ import Item from "../Item/Item";
                     price={product.price}
                     stock={product.stock}
                     img={product.img}     
-                />
+                >
+
+                    <Link to={product.id}>
+                        <button className='Details' >Detalles</button>
+                    </Link>
+
+                </Item>
             ))}
         </>
     )

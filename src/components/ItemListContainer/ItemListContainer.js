@@ -1,8 +1,7 @@
 import './ItemListContainer.css';
 import Titles from '../Titles/Titles.js'
-import Item from '../Item/Item';
 import { useEffect, useState } from 'react';
-import getItemsFromAPI from '../data/products';
+import getItemsFromAPI from '../data/mockService';
 import ItemList from './ItemList';
 
 
@@ -13,7 +12,6 @@ function ItemListContainer() {
 
      useEffect(() => {
          getItemsFromAPI().then((products) => {
-             console.log(products);
              setProductsList(products);
          });
      }, []);

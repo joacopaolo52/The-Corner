@@ -1,4 +1,4 @@
-const products = [
+   const products = [
     {
         id: 1,
         title: 'Argentina (Home)',
@@ -97,4 +97,20 @@ const products = [
     },
 ];
 
-export default products;
+
+
+export default function getItemsFromAPI() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products);
+        }, 2000);
+    });
+}
+export function getSingleItem() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products[0]);
+        }, 2000);
+    });
+    
+}

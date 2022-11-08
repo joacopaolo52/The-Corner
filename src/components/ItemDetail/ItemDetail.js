@@ -1,29 +1,32 @@
 import { useState } from 'react';
 import './ItemDetail.css'
 
-function ItemDetail({Texto, Title}) {
+function ItemDetail(props) {
 
-    const [Detail, setDetail] = useState({display: 'none'});
+    // const [Detail, setDetail] = useState({display: 'none'});
 
 
-    function click() {
-        setDetail({display: 'flex' })
-    }
+    // function click() {
+    //     setDetail({display: 'flex' })
+    // }
     
-    function cerrar() {
-        setDetail({display: 'none' })
-    }
+    // function cerrar() {
+    //     setDetail({display: 'none' })
+    // }
 
     return(
         <>
-
-            <button className='Details' onClick={click} >Detalles</button>
+{/* 
+            <button className='Details' onClick={click} >Detalles</button> */}
             
-            <div style={Detail} className='detailContent'>
-                <h4 onClick={cerrar}>X</h4>
+            {/* <div style={Detail} className='detailContent'> */}
+            <div  className='detailContent'>
+                {/* <h4 onClick={cerrar}>X</h4> */}
                 <div>
-                    <h3>{Title}</h3>
-                    <p>{Texto}</p>
+                    <img src={props.url}></img>
+                    <h4>X</h4>
+                    <h3>{props.title}</h3>
+                    <p>{props.text}</p>
                 </div>
             </div>
         </>
