@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
         {props.productsList.map((product) => (
                 <Item
                     key={product.id}
+                    id={product.id}
                     title={product.title}
                     price={product.price}
                     stock={product.stock}

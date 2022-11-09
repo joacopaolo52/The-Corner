@@ -2,18 +2,21 @@ import '../ItemDetail/ItemDetail.css'
 import { useState, useEffect } from "react";
 import ItemDetail from '../ItemDetail/ItemDetail';
 import  { getSingleItem } from '../data/mockService';
+import { useParams } from 'react-router-dom';
 
 
 function ItemDetailContainer() {
 
     const [product, setProduct] = useState([]);
+    let params= useParams();
+    let id = params.id;
 
     useEffect(() => {
-        getSingleItem().then((products) => {
-            console.log('now', products);
+        console.log(id)
+        getSingleItem(id).then((products) => {
             setProduct(products);
         });
-    }, [0]);
+    }, []);
 
 
    return(
@@ -21,6 +24,7 @@ function ItemDetailContainer() {
        <ItemDetail
             title={product.title}
             url={product.img}
+            id={product.id}
 
        />
 
